@@ -73,7 +73,7 @@ pipeline {
     post {
         success {
             echo "Archiving build artifacts..."
-            archiveArtifacts artifacts: '//*', fingerprint: false
+            archiveArtifacts artifacts: 'build', fingerprint: false
         }
 
         failure {
